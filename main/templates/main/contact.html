@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>@contact</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{% static 'main/assets/favicon.ico' %}"/>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'main/css/styles.css' %}" rel="stylesheet" />
+    </head>
+           <!-- Responsive navbar-->
+           <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="../">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../resume">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link-pressed" href="">Contact</a>
+            </li>
+          </ul>
+          <style>
+            .row {
+              width: 50%;
+              margin-left: 25%;
+            }
+          </style>
+          <form action="" class="text-center row" method="post">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" value="Submit">
+         </form>
+      <div class="fixed-bottom text-center">
+        <style>
+          embed {
+            height: 2.0rem;
+          }
+        </style>
+        <div class="icons-row">
+          <a href="https://www.github.com/salvadorbu" class="svg"><embed src="{% static 'main/assets/githubvec.svg' %}"/></a>
+          <a href="https://www.linkedin.com/in/salvador-buenadicha-calvo-59b602241/" class="svg"><embed src="{% static 'main/assets/linkedin.svg' %}"/></a>
+        </div>
+        <p>&copy; Salvador Buenadicha 2023</p>
+  </div>
+</html>

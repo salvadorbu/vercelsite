@@ -1,0 +1,116 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>@projects</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{% static 'main/assets/favicon.ico' %}"/>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'main/css/styles.css' %}" rel="stylesheet" />
+    </head>
+           <!-- Responsive navbar-->
+           <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="../">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link-pressed" href="">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../resume">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../contact">Contact</a>
+            </li>
+          </ul>
+    <style>
+      h1 {
+        font-size:500%;
+      }
+      div {
+        text-align: center;
+        margin-top: 1%;
+      }
+      .row {
+              width: 50%;
+              margin-left: 29%;
+            }
+      .title {
+        font-size:xx-large
+      }
+      img {
+        width: 100%;
+        border-radius: 15%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+      }
+    </style>
+    <div><h1>Projects</h1></div>
+    <div class="row icon-boxes">
+      <div class="col-md-6 col-lg-5 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
+        <div class="icon-box">
+          <div class="icon"><i class="ri-stack-line"></i></div>
+          <h4 class="title"><a href="https://github.com/salvadorbu/robot-script">HTML Eye Tracker</a></h4>
+          <img src="{% static 'main/assets/eyetracker.png' %}">
+          <p class="description">An accessibility project that read positional data from the tobii eye 
+            tracker engine. After calibrating the coordinates, the program determines which html element is closest to where the user
+          is looking and encloses the element with a red outline. The user can also select buttons and check boxes by closing their eyes for half a second.
+        This was part of an effort to navigate a robot's control panel without having to use a keyboard or mouse.</p>
+        </div>
+      </div>
+
+
+      <div class="col-md-6 col-lg-5 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="300">
+        <div class="icon-box">
+          <div class="icon"><i class="ri-palette-line"></i></div>
+          <h4 class="title"><a href="https://github.com/salvadorbu/Hackviolet">School Discord Bot</a></h4>
+          <img src="{% static 'main/assets/discord_bot.png' %}">
+          <p class="description">A hackathon project where we created a discord bot that was integrated with
+             our school's online course management system. After registering your school information with the bot, it
+            has the ability to display pending assignments and submit files.</p>
+        </div>
+      </div>
+      </div>
+
+      <div class="row icon-boxes">
+      <div class="col-md-6 col-lg-5 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="400">
+        <div class="icon-box">
+          <div class="icon"><i class="ri-command-line"></i></div>
+          <h4 class="title"><a href="https://github.com/salvadorbu/quickread">QuickRead</a></h4>
+          <img src="{% static 'main/assets/quickread.png' %}">
+          <p class="description">Fast multithreaded searcher to find terms in large databases or text files.
+            Uses memory mapping to search through the file without having to load it into memory.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg- d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="500">
+        <div class="icon-box">
+          <div class="icon"><i class="ri-fingerprint-line"></i></div>
+          <h4 class="title"><a href="https://github.com/salvadorbu/EncryptionModel">RSA Model</a></h4>
+          <img src="{% static 'main/assets/encryptionproj.png' %}">
+          <p class="description">A high level implementation of the RSA encryption algorithm in python.
+            Uses argument parsing for message encryption/decryption, though it's goal is to mainly
+            highlight the math behind RSA.
+          </p>
+        </div>
+      </div>
+      </div>
+
+    <div class="fixed-bottom text-center">
+      <style>
+        embed {
+          height: 2.0rem;
+        }
+      </style>
+      <div class="icons-row">
+        <a href="https://www.github.com/salvadorbu" class="svg"><embed src="{% static 'main/assets/githubvec.svg' %}"/></a>
+        <a href="https://www.linkedin.com/in/salvador-buenadicha-calvo-59b602241/" class="svg"><embed src="{% static 'main/assets/linkedin.svg' %}"/></a>
+      </div>
+      <p>&copy; Salvador Buenadicha 2023</p>
+</div>
+</html>
